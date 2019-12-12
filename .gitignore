@@ -1,0 +1,7 @@
+*.log
+*.mat
+*.txt
+**~$
+*.xlsx
+*.png
+*.jpg
