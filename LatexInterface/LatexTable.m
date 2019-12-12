@@ -1,23 +1,22 @@
+% Usermade Matlabclass: LatexTable
+%   
+% Class that collects data and uncertainties to print it in a latex 
+% code table and save it as .tex file, wich can be importet in latex
+%
+    
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Author: Joachim Pomer
+% Creation Date: 10.11.2018
+% Last Update: 16.11.2018
+% by : Joachim Pomper
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+% TODO:
+% Latex Tabular surrounding (Caption, etc.)
+% copy to clipboard
+
 classdef LatexTable < handle
-    % Usermade Matlabclass: LatexTable
-    %
-    % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-    % Author: Joachim Pomer
-    % Creation Date: 10.11.2018
-    % Last Update: 16.11.2018
-    % by : Joachim Pomper
-    % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %   
-    % Class that collects data and uncertainties to print it in a latex 
-    % code table and save it as .tex file, wich can be importet in latex
-    %
-    
-    % features die noch implementiert werden müssen
-    % Tabelle Rundherum
-    % Automatisches einstellen. 
-    % Copiemodus in zwischen ablage.
-    % etc.
-    
+     
     properties (SetAccess = public)
        
         data = [];
@@ -32,12 +31,12 @@ classdef LatexTable < handle
         % formation parameters
         fp_row_names = false;
         fp_row_units = false;
-        fp_col_names = false; % not available by now
+        fp_col_names = false;    % not available by now
         fp_col_units = false;
         fp_header_units = false; % not available by now
         
         % Latex required usepackage parameters
-        rup_siunitx = true % not available by now
+        rup_siunitx = true   % not available by now
         rup_inputence = true % not available by now
         
         % dimensions of table
@@ -217,16 +216,16 @@ classdef LatexTable < handle
         % THIS IS AN OLD VERSION
         % IT WORKS BUT SCHOULD BE REDONE
         %
-        %This function is used to correctly format the data of an experiment consisting of
-        %measurement Values and measurement uncertainty. It is thought to be used
-        %together with the function 'tabtex.m' to create a .tex file wich can be
-        %importet into latex. For this the default output of this functionis a
-        %cell-array of stringarrys wich contain code that can be transcribed to
-        %latex code with the function tabtex.
-        %the two other optional outputs are the formated Values and Uncertainties.
-        %Example:
-        %Ix=[200,2;200.0,2.0;200.00,0.22];
-        %Idx=[0.2,2;0.002,0.22;2,0.002];
+        % This function is used to correctly format the data of an experiment consisting of
+        % measurement Values and measurement uncertainty. It is thought to be used
+        % together with the function 'tabtex.m' to create a .tex file wich can be
+        % importet into latex. For this the default output of this functionis a
+        % cell-array of stringarrys wich contain code that can be transcribed to
+        % latex code with the function tabtex.
+        % the two other optional outputs are the formated Values and Uncertainties.
+        % Example:
+        % Ix=[200,2;200.0,2.0;200.00,0.22];
+        % Idx=[0.2,2;0.002,0.22;2,0.002];
 
 
         %Debugging und Defaultvalues
