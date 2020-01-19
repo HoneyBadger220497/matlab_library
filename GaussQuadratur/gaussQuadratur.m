@@ -1,6 +1,6 @@
 function I = gaussQuadratur(f,n)
-%GAUSSQUADRATUR Summary of this function goes here
-%   Detailed explanation goes here
+%GAUSSQUADRATUR(F,N) returns the approximate integral of the function F
+%                    from -1 to 1 using N+1 grid points
     
 [~,p_n] = generateLegendrePolynome(n);
 roots = legendreRoots(n+1);

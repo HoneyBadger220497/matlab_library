@@ -1,6 +1,8 @@
 function [p_n,p_n_handle] = generateLegendrePolynome(n)
 
-%GENERATELEGENDREPOLYNOME(n) returns the Legendre Polynome of degree n
+%GENERATELEGENDREPOLYNOME(n) returns the Legendre Polynome of degree n as 
+%                            a MATLAB polynomial as well as a function
+%                            handle
 
 if ~(n == fix(n)), error('Degree of Polynomial has to be an integer!'), end
 if n < 0, error('Degree of Polynomial has to be a positive integer!'), end

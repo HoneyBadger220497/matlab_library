@@ -1,6 +1,6 @@
 function roots = legendreRoots(n)
-%LEGENDREROOTS Summary of this function goes here
-%   Detailed explanation goes here
+%LEGENDREROOTS(n) returns the N roots of the N-th legendre polynomial in
+%                 ascencding order
 
 p = generateLegendrePolynome(n);
 roots = zeros(1,n);
