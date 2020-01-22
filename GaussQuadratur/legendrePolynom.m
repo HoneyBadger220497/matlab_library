@@ -1,4 +1,4 @@
-function [p,p_prime] = genLegPol(n,x)
+function [p, p_prime] = legendrePolynom(n, x)
 %GENLEGPOL calculates the N-th Legendre Polynomial's value at X as well as 
 %          its derivative's value:
 %          [P,P_PRIME] = genLegPol(N,X)
