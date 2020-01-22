@@ -2,7 +2,10 @@ function [p, p_prime] = legendrePolynom(n, x)
 %GENLEGPOL calculates the N-th Legendre Polynomial's value at X as well as 
 %          its derivative's value:
 %          [P,P_PRIME] = genLegPol(N,X)
-            
+% 
+% in loving memory to: 
+% p_k = (2*k-1)/k*[p_k_m1,0] - (k-1)/k*[0,0,p_k_m2];
+%
 
 if ~(n == fix(n)), error('Degree of Polynomial has to be an integer!'), end
 if n < 0, error('Degree of Polynomial has to be a positive integer!'), end
